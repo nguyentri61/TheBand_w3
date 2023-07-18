@@ -69,7 +69,7 @@ html {
 }
 
 #header {
-    height: 46.5px;
+    height: 46px;
     background-color: #000;
     position: fixed;
     top: 0;
@@ -84,10 +84,12 @@ html {
 }
 
 #nav li a{
-    line-height: 46.5px;
+    line-height: 46px;
     padding: 0 24px;
     text-decoration: none;
     display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
 }
 
 #nav > li:hover > a,
@@ -97,6 +99,7 @@ html {
 }
 
 #nav li:hover .subnav {
+    /* overflow: initial; */
     display: block;
 }
 
@@ -140,22 +143,36 @@ html {
     cursor: pointer;
 }
 
-#header .search-btn {
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .search-btn, 
+#header .mobile-menu-btn {
     float: right;
     padding: 0 24px;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+}
+
+#header .menu-icon,
 #header .search-icon {
-    line-height: 46.5px;
+    line-height: 46px;
     font-size: 20px;
     color: #fff;
 }
 
 #slider {
     position: relative;
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 50%;
-    background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
+    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -171,12 +188,14 @@ html {
     font-weight: 400;
     padding-bottom: 25px;
     font-family: "Segoe UI", Arial, sans-serif;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-description {
     font-weight: 700;
     font-size: 15px;
     font-family: Lato, sans-serif;
+    text-shadow: 0 0 1px #000;
 }
 
 
@@ -186,10 +205,10 @@ html {
 
 #content .section-content {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;
-    box-sizing: inherit;
     display: block;
 }
 
@@ -277,7 +296,7 @@ html {
 }
 
 .places-tour {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
     font-family: "Lato", sans-serif;
     font-size: 15px;
@@ -306,7 +325,6 @@ html {
 .place-time {
     margin: 15px 0;
     opacity: 0.6;
-
 }
 
 .place-desc {
@@ -351,6 +369,7 @@ html {
 .modal .modal-container {
     background-color: #fff;
     width: 900px;
+    max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
     animation: modalFadeIn ease-in-out 0.4s;
@@ -495,7 +514,6 @@ html {
 .map-section img {
     width: 100%;
 }
-
 
 #footer {
     padding: 64px 16px;

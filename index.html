@@ -6,6 +6,7 @@
     <title>The band</title>
     <link rel="icon" type="image/x-icon" href="https://banner2.cleanpng.com/20201107/ivr/transparent-music-festival-icon-band-icon-5fa6878a720ba9.7438192616047491944671.jpg">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
                 <li>
                     <a href="#">
                         More
-                        <i class="nav-icon ti-more-alt"></i>
+                        <i class="nav-icon ti-angle-double-down"></i>
                     </a>
                     <ul class="subnav">
                         <li><a href="#">Merchandise</a></li>
@@ -34,6 +35,9 @@
             <!-- Begin Search Button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End Search Button -->
         </div> 
@@ -58,17 +62,17 @@
                 
                 <!-- Team section -->
                 <div class="row section-team">
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full text-center">
                         <p class="team-name">Tri</p>
                         <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="team-pic">
                     </div>
 
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full text-center">
                         <p class="team-name">Tri</p>
                         <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="team-pic">
                     </div>
 
-                    <div class="col col-third text-center">
+                    <div class="col col-third s-col-full text-center">
                         <p class="team-name">Tri</p>
                         <img src="./assets/img/band_member/bandmember.jpg" alt="Name" class="team-pic">
                     </div>
@@ -90,33 +94,33 @@
                     </ul>
 
                     <div class="row places-tour">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place1.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-ticket-btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place2.jpg" alt="Paris" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-ticket-btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/place/place1.jpg" alt="San Francisco" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="buy-ticket-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="buy-ticket-btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- <div class="clear"></div> -->
@@ -132,18 +136,18 @@
                 <p class="section-subheading">Fan? Drop a note!</p>
                 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p></p><i class="ti-headphone-alt"></i>Phone: +00 151515</p>
-                        <p></p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        <p></p><i class="ti-headphone-alt"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p></p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" id="name-box" required class="form-control" placeholder="Name">
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" id="email-box" required class="form-control" placeholder="Email">
                                 </div>
                             </div>
@@ -152,18 +156,18 @@
                                     <input type="text" name="" id="massage-box" required class="form-control" placeholder="Message">
                                 </div>
                             </div>
-                            <input class="form-submit mt-16 mb-16" type="submit" value="SEND">
+                            <input class="form-submit mt-16 mb-16 s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>
             </div>
             <!-- End Contact section -->
             
-            <!-- Begin map section -->
+            <!-- Map section -->
             <div class="map-section">
                 <img src="./assets/img/map/map.jpg" alt="Map">
             </div>
-            <!-- End map section -->
+           
         </div>
 
         <!-- Begin footer -->
@@ -242,6 +246,42 @@
         modalContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+    </script>
+
+    <!-- script mobile menu -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // Đóng/mở menu mobile
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+        }
+
+
     </script>
 </body>
 </html>
